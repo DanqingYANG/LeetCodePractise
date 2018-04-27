@@ -115,6 +115,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="693BinaryNumbersAlternating.h" />
+    <ClInclude Include="CouplesHoldingHands.h" />
+    <ClInclude Include="807maxIncreaseSkyline.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CouplesHoldingHands.cpp" />
+    <ClCompile Include="807maxIncreaseSkyline.cpp" />
+    <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
