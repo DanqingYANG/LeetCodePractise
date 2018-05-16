@@ -118,6 +118,7 @@
     <ClInclude Include="693BinaryNumbersAlternating.h" />
     <ClInclude Include="CouplesHoldingHands.h" />
     <ClInclude Include="807maxIncreaseSkyline.h" />
+    <ClInclude Include="832FlippingAnImage.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CouplesHoldingHands.cpp" />

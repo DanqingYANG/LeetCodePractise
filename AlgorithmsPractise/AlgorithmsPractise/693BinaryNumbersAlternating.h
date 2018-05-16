@@ -9,7 +9,7 @@ public:
 	BinaryNumbersAlternating() {};
 	~BinaryNumbersAlternating() {};
 	bool hasAlternatingBits(int n) {
-		bool b = n % 2;
+		int b = n % 2;
 		n = n / 2;
 		while (n > 0)
 		{

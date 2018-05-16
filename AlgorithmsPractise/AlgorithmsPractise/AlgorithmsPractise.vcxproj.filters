@@ -24,6 +24,9 @@
     <ClInclude Include="693BinaryNumbersAlternating.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="832FlippingAnImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CouplesHoldingHands.cpp">
