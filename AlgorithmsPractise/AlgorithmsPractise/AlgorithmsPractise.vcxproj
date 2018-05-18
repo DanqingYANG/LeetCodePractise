@@ -119,6 +119,8 @@
     <ClInclude Include="CouplesHoldingHands.h" />
     <ClInclude Include="807maxIncreaseSkyline.h" />
     <ClInclude Include="832FlippingAnImage.h" />
+    <ClInclude Include="046Permutation.h" />
+    <ClInclude Include="test.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CouplesHoldingHands.cpp" />

@@ -1,88 +1,81 @@
 using namespace std;
 #include <iostream>
 #include <vector>
+
 #include "693BinaryNumbersAlternating.h"
 #include "807maxIncreaseSkyline.h"
 #include "832FlippingAnImage.h"
+#include "046Permutation.h"
+
+
+///
+
+
+ struct TreeNode {
+    int val;
+     TreeNode *left;
+     TreeNode *right;
+     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ };
 
 class Solution {
 public:
-	struct TreeNode
-	{
-		int number;
-		TreeNode * parent;
-	};
+	//Solution 1 : add t2 to t1
+	//Solution 2 : build a new tree add as many trees as possible, will be more flexible
 
-	bool qualifiedCombi(TreeNode* currentNode, int S)
-	{
-		int sum = 0;
-		while (currentNode->parent != nullptr)
-		{
-			sum = sum + currentNode->number;
-			currentNode = currentNode->parent;
-			//cout << currentNode->number << " ";
-		}
-		if (sum == S) {
-			//cout << endl << sum << endl;
-			return true;
-		}
-		return false;
+
+
+	//Solution 1 : add t2 to t1
+	TreeNode* mergeTrees(TreeNode* t1, TreeNode* t2) {
+		t1->val = t1->val + t2->val;
+		if(t1 != NULL && t2 != NULL)
+			CombineBranches(t1, t2);
+		return t1;
 	}
 
-	vector<TreeNode* > buildTree(vector<TreeNode* > Parents, int num)
-	{
-		vector<TreeNode* > Children; 
-		int n = static_cast<int>(Parents.size());
-		for ( int i = 0; i < n; i++)
+
+	void CombineBranches(TreeNode* t1, TreeNode* t2) {
+		t1->val = t1->val + t2 ->val;
+		if (t2->left == NULL && t2->right == NULL)//endpoint of t2
+			return;
+		//else t1 Null,  adjust the point
+		else 
 		{
-			TreeNode* leftchild = new TreeNode{ num, Parents[n - 1 - i] };
-			TreeNode* rightchild = new TreeNode{ -num, Parents[n - 1 - i] };;
-			
-			//TreeNode rightchild = { -num, Parents[ n -1 - i ] };
-			Children.push_back(leftchild);
-			Children.push_back(rightchild);
-			Parents.pop_back();
+
+			CombineBranches(t1->left, t2->left);
+			CombineBranches(t1->right, t2->left);
 		}
-		return Children;
 	}
 
-	int findTargetSumWays(vector<int>& nums, int S)
+
+
+	int addValues(TreeNode * t1, TreeNode* t2)
 	{
-		vector<TreeNode* > currentLevel;
-		TreeNode root = { 0, nullptr };
-		currentLevel.push_back(&root);
-
-		int n = static_cast<int>(nums.size()); // static_cast is needed here
-		for (int i = 0; i < n; i++)
+		if (t1 != NULL)
 		{
-			currentLevel = buildTree(currentLevel, nums[i]);
-		}
-
-		int qualifiedCases = 0;
-		n = static_cast<int>(currentLevel.size());
-		for (int i = 0; i < n; i++)
-		{
-			if (qualifiedCombi(currentLevel[i], S))
-			{
-				qualifiedCases = qualifiedCases + 1;
+			if (t2 != NULL) {
+				t1->val = t2->val + t1->val; 
 			}
 		}
-		return qualifiedCases;
+		else {
+			if (t2 != NULL) {
+				t1->val = t2 -> val;
+			}
+		}
 	}
+
 };
 
 int main()
 {
+	Solution s;
+
 	//832
 	FlippingAnImage f;
 	f.test();
-	//int ar[4] = { 1,2,3,4 };
-	
 
-	//494 not solved
-	Solution s;
-	vector<int> v = { 19,32,36,7,37,10,44,21,40,39,39,18,5,34,3,40,33,2,46,46 };
-	s.findTargetSumWays(v, 29);
+	//494 
+	
 
 	//693
 	BinaryNumbersAlternating s693;
