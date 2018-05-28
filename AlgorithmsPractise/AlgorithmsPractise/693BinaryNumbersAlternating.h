@@ -19,5 +19,14 @@ public:
 		}
 		return true;
 	}
+
+	void test() {
+		BinaryNumbersAlternating s693;
+		for (int i = 1; i < 22; i++)
+		{
+			bool b = s693.hasAlternatingBits(i);
+			cout << i << " " << b << endl;
+		}
+	}
 };
 

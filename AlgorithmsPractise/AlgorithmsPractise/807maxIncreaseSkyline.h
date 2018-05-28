@@ -8,7 +8,7 @@ public:
 	maxIncreaseSkyline();
 	~maxIncreaseSkyline();
 	int maxIncreaseKeepingSkyline(vector<vector<int>>& grid);
-
+	void test();
 private:
 	vector<int> topBottom;
 	vector<int> leftRight;

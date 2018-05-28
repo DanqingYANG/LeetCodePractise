@@ -33,6 +33,18 @@
     <ClInclude Include="046Permutation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="461HammingDistance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="104MaximumDepthOfBinaryTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="leetcodeTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="226InvertBinaryTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CouplesHoldingHands.cpp">
