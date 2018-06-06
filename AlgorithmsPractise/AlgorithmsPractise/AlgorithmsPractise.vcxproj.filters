@@ -45,8 +45,8 @@
     <ClInclude Include="226InvertBinaryTree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\danqi\source\repos\data_structure_algorithm\HackerRank\Graph\dataInterface\dataInterface.h">
-      <Filter>Resource Files</Filter>
+    <ClInclude Include="DataInterface.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -59,27 +59,5 @@
     <ClCompile Include="807maxIncreaseSkyline.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="C:\Users\danqi\source\repos\data_structure_algorithm\HackerRank\Graph\dataInterface\ans - Copy.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="C:\Users\danqi\source\repos\data_structure_algorithm\HackerRank\Graph\dataInterface\ans.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="C:\Users\danqi\source\repos\data_structure_algorithm\HackerRank\Graph\dataInterface\input01.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="C:\Users\danqi\source\repos\data_structure_algorithm\HackerRank\Graph\dataInterface\output01.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="C:\Users\danqi\source\repos\data_structure_algorithm\HackerRank\Graph\dataInterface\result.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="C:\Users\danqi\source\repos\data_structure_algorithm\HackerRank\Graph\dataInterface\map_phoneBook_dataInterfaceTestExample.md">
-      <Filter>Resource Files</Filter>
-    </None>
   </ItemGroup>
 </Project>

@@ -116,7 +116,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="693BinaryNumbersAlternating.h" />
-    <ClInclude Include="C:\Users\danqi\source\repos\data_structure_algorithm\HackerRank\Graph\dataInterface\dataInterface.h" />
     <ClInclude Include="CouplesHoldingHands.h" />
     <ClInclude Include="807maxIncreaseSkyline.h" />
     <ClInclude Include="832FlippingAnImage.h" />
@@ -124,6 +123,7 @@
     <ClInclude Include="461HammingDistance.h" />
     <ClInclude Include="104MaximumDepthOfBinaryTree.h" />
     <ClInclude Include="226InvertBinaryTree.h" />
+    <ClInclude Include="DataInterface.h" />
     <ClInclude Include="leetcodeTree.h" />
     <ClInclude Include="test.h" />
   </ItemGroup>
@@ -131,16 +131,6 @@
     <ClCompile Include="CouplesHoldingHands.cpp" />
     <ClCompile Include="807maxIncreaseSkyline.cpp" />
     <ClCompile Include="Source.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="C:\Users\danqi\source\repos\data_structure_algorithm\HackerRank\Graph\dataInterface\ans - Copy.txt" />
-    <Text Include="C:\Users\danqi\source\repos\data_structure_algorithm\HackerRank\Graph\dataInterface\ans.txt" />
-    <Text Include="C:\Users\danqi\source\repos\data_structure_algorithm\HackerRank\Graph\dataInterface\input01.txt" />
-    <Text Include="C:\Users\danqi\source\repos\data_structure_algorithm\HackerRank\Graph\dataInterface\output01.txt" />
-    <Text Include="C:\Users\danqi\source\repos\data_structure_algorithm\HackerRank\Graph\dataInterface\result.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="C:\Users\danqi\source\repos\data_structure_algorithm\HackerRank\Graph\dataInterface\map_phoneBook_dataInterfaceTestExample.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
