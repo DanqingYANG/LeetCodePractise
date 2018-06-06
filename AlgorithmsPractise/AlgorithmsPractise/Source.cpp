@@ -62,7 +62,6 @@ public:
 		string s = "[[0,1],[0,2],[1,2]]";
 		int n = 3;
 		vector<pair<int,int> > v = stringToGraph_edge(s);
-
 		cout << canFinish(n, v);
 
 		return;
