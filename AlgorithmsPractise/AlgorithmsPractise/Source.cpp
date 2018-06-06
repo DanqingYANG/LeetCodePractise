@@ -52,7 +52,6 @@ public:
 					break;
 				}
 			}
-
 		}
 
 		return canfinish;
